@@ -6,12 +6,16 @@
 ## Important Links
 React Native frontend Repository is here: [here](https://github.com/LaminSanneh/medical-appointment-app-ReactNative_Frontend)
 
-## Project Status: Work In Progress
-
-## Items in the workings
+## Functional Requirement Items in the workings
 - Roles and permission management for doctors and superadmins
 - User management through backend
 - Multi tenant feature so we can add companies/organizations/hospital wherein doctors can belong to
+
+## Technical Requirement Items in the workings
+- Move many controller code into services
+- Add dedicated serializers for when returning data from apis
+- Add more test coverage
+- Add more unified error handling to be sent to the frontend
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
