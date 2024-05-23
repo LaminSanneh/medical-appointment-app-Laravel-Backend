@@ -15,6 +15,15 @@ class UserFactory extends Factory
      * The current password being used by the factory.
      */
     protected static ?string $password;
+    
+    const SPECIALIZATIONS = [
+        'Neurologists',
+        'Oncologists',
+        'Pediatricians',
+        'Physiatrists',
+        'General Surgeons',
+        'Radiologists'
+    ];
 
     /**
      * Define the model's default state.
@@ -28,6 +37,10 @@ class UserFactory extends Factory
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
+            'specialization' => fake()->randomElement(self::SPECIALIZATIONS),
+            'phone' => fake()->phoneNumber,
+            'doctor_id_number' => fake()->randomNumber(9),
+            'address' => fake()->address,
             'remember_token' => Str::random(10),
         ];
     }
