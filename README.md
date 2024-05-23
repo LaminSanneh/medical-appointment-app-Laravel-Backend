@@ -6,6 +6,11 @@
 ## Important Links
 React Native frontend Repository is here: [here](https://github.com/LaminSanneh/medical-appointment-app-ReactNative_Frontend)
 
+## Highlighted Code Features
+- Integration Tests for controller
+- Model seeding and using factories for model creation during development
+- Custom role middleware checker in routes for user types
+
 ## Functional Requirement Items in the workings
 - Roles and permission management for doctors and superadmins
 - User management through backend
